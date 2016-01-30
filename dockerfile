@@ -35,6 +35,7 @@ ENV PATH $PATH:$M2_HOME/bin:$JAVA_HOME/bin
 
 
 ADD mavenbuild.sh .
+RUN ls
 RUN sh mavenbuild.sh
 
 #RUN cd /usr/local/tomcat/server_patch_0816/target/ \
