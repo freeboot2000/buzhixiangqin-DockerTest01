@@ -21,7 +21,7 @@ RUN apt-get install -y subversion
 
 # Install maven
 RUN wget http://mirrors.hust.edu.cn/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-RUN tar -xzf ./jdk-8u71-linux-x64.tar.gz -C /usr/local/
+RUN tar -xzf ./apache-maven-3.3.9-bin.tar.gz -C /usr/local/
 
 
 #update code and build
