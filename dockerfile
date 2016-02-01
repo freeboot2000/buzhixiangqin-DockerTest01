@@ -43,10 +43,10 @@ RUN ls /usr/local/tomcat/server_patch_0816/target/
 
 RUN cp /usr/local/tomcat/server_patch_0816/target/SpringMVC.war /usr/local/tomcat/webapps/
 
+RUN echo "root:123456" | chpasswd 
+
 RUN apt-get install -y openssh-server
 RUN mkdir -p /var/run/sshd
-
-RUN echo "root:123456" | chpasswd 
 
 
 # 容器需要开放SSH 22端口
@@ -56,4 +56,4 @@ EXPOSE 22
 EXPOSE 8080
 
 
-ENTRYPOINT sh ./bin/startup.sh && /usr/sbin/sshd -D
+ENTRYPOINT /usr/sbin/sshd -D
