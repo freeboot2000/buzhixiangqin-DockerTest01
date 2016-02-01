@@ -56,4 +56,4 @@ EXPOSE 22
 EXPOSE 8080
 
 
-ENTRYPOINT sh ./startup.sh && /usr/sbin/sshd -D
+ENTRYPOINT sh ./bin/startup.sh && /usr/sbin/sshd -D
