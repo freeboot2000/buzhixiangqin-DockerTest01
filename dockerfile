@@ -55,5 +55,3 @@ EXPOSE 22
 # 容器需要开放Tomcat 8080端口
 EXPOSE 8080
 
-
-ENTRYPOINT /usr/sbin/sshd -D
