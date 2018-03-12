@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @freeboot2000
- Sign out
-1
-1 1 freeboot2000/buzhixiangqin-DockerTest01
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-buzhixiangqin-DockerTest01/dockerfile
-ea21add  on 3 Feb 2016
- yishan.sun test03
-     
-58 lines (37 sloc)  1.54 KB
 # base tomcat image
 FROM tomcat
 
@@ -71,16 +54,3 @@ EXPOSE 22
 
 # 容器需要开放Tomcat 8080端口
 EXPOSE 8080
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
